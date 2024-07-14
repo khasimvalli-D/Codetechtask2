@@ -1,0 +1,139 @@
+Generating code:
+
+As you have completed assigning the ports you can generate the code. Click Ctrl+S to save the file and then generate code by going to Project > Generate Code. 
+
+After Generating the code, you will have to edit three sections: 
+The User Include Section
+The Private Macro Section
+The Private Variables Section 
+The Private Functions Section
+The User Code Begin 3 Inside the while loop
+The User Code Begin 4 
+The codes of each section are given below: 
+
+1. The User Include Section
+
+Copy Code
+#include "stdio.h"
+#include "string.h"  
+include
+
+2. The Private Macro Section
+
+Copy Code
+#define DATA_INPUT_USER 512
+#define AXIS_NUMBER 1
+Define
+
+3. The Private Variables Section
+
+Copy Code
+float mic_data[DATA_INPUT_USER * AXIS_NUMBER] = {0};
+Variables
+
+4. The Private Functions Sections
+
+Copy Code
+void fill_mic();
+void Log();
+Private Functions
+
+5. The User Code Begin 3 inside while loop
+
+Copy Code
+Log();
+Log
+
+6. The User Code Begin 4
+
+Copy Code
+void fill_mic() {
+	for (int i = 0; i < DATA_INPUT_USER; i++) {
+		mic_data[AXIS_NUMBER * i] = HAL_ADC_GetValue(&hadc1);
+	}
+}
+
+void Log(){
+	HAL_ADC_Start(&hadc1);
+	fill_mic();
+	for (int i = 0; i < DATA_INPUT_USER; i++) {
+		printf("%.2f",mic_data[AXIS_NUMBER * i]);
+		printf(" ");
+	}
+	printf("\r\n");
+	HAL_Delay(500);
+}
+int __io_putchar(int ch){
+	HAL_UART_Transmit(&huart1, (uint8_t *) &ch, 1, HAL_MAX_DELAY);
+	return ch;
+}
+CodeGenerating code:
+
+As you have completed assigning the ports you can generate the code. Click Ctrl+S to save the file and then generate code by going to Project > Generate Code. 
+
+After Generating the code, you will have to edit three sections: 
+The User Include Section
+The Private Macro Section
+The Private Variables Section 
+The Private Functions Section
+The User Code Begin 3 Inside the while loop
+The User Code Begin 4 
+The codes of each section are given below: 
+
+1. The User Include Section
+
+Copy Code
+#include "stdio.h"
+#include "string.h"  
+include
+
+2. The Private Macro Section
+
+Copy Code
+#define DATA_INPUT_USER 512
+#define AXIS_NUMBER 1
+Define
+
+3. The Private Variables Section
+
+Copy Code
+float mic_data[DATA_INPUT_USER * AXIS_NUMBER] = {0};
+Variables
+
+4. The Private Functions Sections
+
+Copy Code
+void fill_mic();
+void Log();
+Private Functions
+
+5. The User Code Begin 3 inside while loop
+
+Copy Code
+Log();
+Log
+
+6. The User Code Begin 4
+
+Copy Code
+void fill_mic() {
+	for (int i = 0; i < DATA_INPUT_USER; i++) {
+		mic_data[AXIS_NUMBER * i] = HAL_ADC_GetValue(&hadc1);
+	}
+}
+
+void Log(){
+	HAL_ADC_Start(&hadc1);
+	fill_mic();
+	for (int i = 0; i < DATA_INPUT_USER; i++) {
+		printf("%.2f",mic_data[AXIS_NUMBER * i]);
+		printf(" ");
+	}
+	printf("\r\n");
+	HAL_Delay(500);
+}
+int __io_putchar(int ch){
+	HAL_UART_Transmit(&huart1, (uint8_t *) &ch, 1, HAL_MAX_DELAY);
+	return ch;
+}
+Code
