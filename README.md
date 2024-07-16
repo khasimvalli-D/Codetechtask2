@@ -42,7 +42,7 @@ Use different sensors or devices to log various types of data
 Implement data analysis or processing algorithms
 Add a user interface (e.g., buttons, keypad, or touchscreen) Integrate with cloud services or IoT platforms
 Experiment with other STM32 features (e.g., DMA, UART, or SPI)
-This project offers a wide range of possibilities and challenges, making it an excellent learning experience for those interested in embedded systems and microcontrollers. If you have any questions or need help with the project, feel free to ask!NAME:-SHAIK SALMATHAJU COMPANY:-CODETECH IT SOLUTIONS INTERN ID:-CT08ES890 DOMAIN:-EMBEDDED SYSTEMS DURATIONS:JUNE TO AUGUST 2024 MENTOR:-SRAVANI
+This project offers a wide range of possibilities and challenges, making it an excellent learning experience for those interested in embedded systems and microcontrollers. If you have any questions or need help with the project, feel free to ask!NAME:-D.KHASIM VALLI COMPANY:-CODETECH IT SOLUTIONS INTERN ID:-CT12DS1036 DOMAIN:-EMBEDDED SYSTEMS DURATIONS:JUNE TO AUGUST 2024 MENTOR:-SRAVANI
 
 OVERVIEW OF THE PROJECT
 
